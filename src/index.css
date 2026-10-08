@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Design tokens: one place for every colour and font */
+@theme {
+  --color-background: #ffffff;
+  /* page background */
+  --color-primary: #1b2433;
+  /* main text */
+  --color-secondary: #5e6778;
+  /* lighter text */
+  --color-border: #e4e7ec;
+  /* dividing lines */
+  --color-accent: #0f6e5a;
+  /* links and project results */
+
+  --font-sans: "Schibsted Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-primary font-sans antialiased;
+  }
+
+  a {
+    @apply text-accent underline underline-offset-4;
+  }
+}
